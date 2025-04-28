@@ -14,12 +14,11 @@
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
     <nav id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">✖</a>
-        <a href="javascript:void(0)" onclick="openTab('about')">ℹ️ About</a>
-        <a href="javascript:void(0)" onclick="openTab('products')">🛍️ Products</a>
-        <a href="javascript:void(0)" onclick="openTab('services')">💼 Services</a>
-        <a href="javascript:void(0)" onclick="openTab('contact')">📞 Contact</a>
-        <a href="javascript:void(0)" onclick="openTab('location')">📍 Location</a>
+      <a href="javascript:void(0)" onclick="openTab('about'); toggleMenu();">ℹ️ About</a>
+        <a href="javascript:void(0)" onclick="openTab('products'); toggleMenu();">🛍️ Products</a>
+        <a href="javascript:void(0)" onclick="openTab('services'); toggleMenu();">💼 Services</a>
+        <a href="javascript:void(0)" onclick="openTab('contact'); toggleMenu();">📞 Contact</a>
+        <a href="javascript:void(0)" onclick="openTab('location'); toggleMenu();">📍 Location</a>
     </nav>
 
     <div id="backdrop" class="backdrop" onclick="toggleMenu()"></div>
