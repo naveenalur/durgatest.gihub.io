@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Durgamba Clinic | Pharmacy | Medical in Vidyanagar, Shimoga</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">✖</a>
+        <a href="javascript:void(0)" onclick="openTab('about')">ℹ️ About</a>
+        <a href="javascript:void(0)" onclick="openTab('products')">🛍️ Products</a>
+        <a href="javascript:void(0)" onclick="openTab('services')">💼 Services</a>
+        <a href="javascript:void(0)" onclick="openTab('contact')">📞 Contact</a>
+        <a href="javascript:void(0)" onclick="openTab('location')">📍 Location</a>
+    </nav>
+
+    <div id="backdrop" class="backdrop" onclick="toggleMenu()"></div>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.46PRAbIqWGOFExP-WwrtJgHaHa?rs=1&pid=ImgDetMain"
+                alt="Durgambaa Medicals Logo" class="logo">
+        </div>
+        <h1>Sri Durgamba Clinic | Pharmacy | Medical</h1>
+        <p>Vidyanagar, Shimoga - Your Trusted Healthcare Partner</p>
+    </header>
+
+    <div class="tabs-container">
+        <div id="about" class="tab-content">
+            <div class="about-images">
+                <div class="image-container">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPIJZbHCG-6VnseZtDF2kinrg2Crq11_1UyYX_R=w203-h152-k-no" alt="Clinic Image 1" class="about-image">
+                    <div class="info">Medical</div>
+                </div>
+                <div class="image-container">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipN7PfDtymbsxjLE7Lc8HqTD4e872SI-lS0ssjfm=s508-k-no" alt="Clinic Image 2" class="about-image">
+                    <div class="info">Clinic Entry</div>
+                </div>
+                <div class="image-container">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMZFNFtcQ3oYNOvoDvgyx2KCfuXC_Rxze69kc2m=s677-k-no" alt="Clinic Image 3" class="about-image">
+                    <div class="info">Clinic</div>
+                </div>
+                <div class="image-container">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPfRaLypVgr7sx4dmtbTGdLjiZsU6K5XgbEBUTh=s451-k-no" alt="Clinic Image 4" class="about-image">
+                    <div class="info">Bed Facility</div>
+                </div>
+            </div>
+            
+            <h2>ℹ️ About Sri Durgamba Clinic / Pharmacy / Medical</h2>
+            <span class="material-icons" style="font-size: 48px; color: #4CAF50;">local_hospital</span>
+            <p>Sri Durgamba Clinic / Pharmacy / Medical is a trusted healthcare destination committed to providing quality medical care and essential health products. With a compassionate approach and qualified medical staff, we aim to serve patients with personalized attention and prompt services. Whether you're here for a consultation, to buy medicines, or get basic health checks, your wellness is our priority.</p>
+        </div>
+
+        <div id="products" class="tab-content">
+            <h2>🛍️ Our Products</h2>
+            <ul>
+                <li>💊 Branded Medicines</li>
+                <li>🩺 Over-the-Counter (OTC) Products</li>
+                <li>🔪 Surgical Items</li>
+                <li>👶 Baby Care Products</li>
+                <li>🐶 Pet Foods (Dog, Cat, Cow, etc.)</li>
+                <li>💉 Veterinary Medicines</li>
+            </ul>
+        </div>
+
+        <div id="services" class="tab-content">
+            <h2>💼 Our Services</h2>
+            <ul>
+                <li>General Physician Consultation</li>
+                <li>Minor Treatments & First Aid</li>
+                <li>Blood Pressure & Sugar Checkups</li>
+                <li>Prescription Fulfilments</li>
+                <li>Medicine Home Delivery (within local area)</li>
+                <li>Health Advice & Counselling</li>
+                <li>Vaccination Support (based on availability)</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>📞 Contact Us</h2>
+            <p>For inquiries or to check medicine availability, call us:</p>
+            <p>📱 7353732431 | 9036271469 | 9916120945</p>
+            <p>📧 Email: <a href="mailto:sridurgambaaclinic@gmail.com">sridurgambaaclinic@gmail.com</a></p>
+            <p>⏰ Pharmacy / Medical Opening Hours: Mon-Sat: 09 AM – 10 PM, Sunday: 10 AM – 10 PM</p>
+            <p>⏰ Clinic Opening Hours: Mon-Sat: 10 AM – 10 PM, Sunday: 11 AM – 09 PM</p>
+        </div>
+
+        <div id="location" class="tab-content">
+            <h2>📍 Our Location</h2>
+            <p>Our clinic is located at:</p>
+            <p>📍 <strong>B. H. Road, Vidyanagar, Shimoga - 577203</strong></p>
+            <p>🌐 <a href="https://maps.app.goo.gl/kkKbtXYGPd8oGgwy8?g_st=aw" target="_blank">View on Google Maps</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Sri Durgamba Clinic / Pharmacy / Medical. All Rights Reserved 2025.</p>
+    </footer>
+
+    <script>
+        let isInitialLoad = true;
+
+        function openTab(tabId) {
+            document.querySelectorAll(".tab-content").forEach(tab => tab.style.display = "none");
+            document.getElementById(tabId).style.display = "block";
+        }
+
+        function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const backdrop = document.getElementById("backdrop");
+            sidebar.classList.toggle("show");
+            backdrop.classList.toggle("show");
+        }
+
+        window.onload = function () {
+            openTab('about');
+            isInitialLoad = false;
+        }
+    </script>
+
+</body>
+
+</html>
